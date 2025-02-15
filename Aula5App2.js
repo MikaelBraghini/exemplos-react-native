@@ -10,6 +10,7 @@ import {
   FlatList,
   StyleSheet,
 } from 'react-native';
+import raectLogo from './assets/react-native.svg';
 
 const App = () => {
   const [text, setText] = useState('');
@@ -31,10 +32,7 @@ const App = () => {
   return (
     <ScrollView style={styles.container}>
       <View style={styles.header}>
-        <Image
-          source={{ uri: 'https://reactnative.dev/img/react-native-logo.png' }}
-          style={styles.image}
-        />
+        <Image source={raectLogo} style={styles.image} />
         <Text style={styles.title}>Exemplo de App React Native</Text>
       </View>
       <TextInput
